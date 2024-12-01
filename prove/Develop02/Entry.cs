@@ -1,10 +1,23 @@
-public class Entry()
+using System;
+
+public class Entry
 {
-string _date;
-string _promptText;
-string _entryText;
-public void Display()
-{
-    Console.WriteLine($"{_date}, {_promptText}, {_entryText}");
-}
+    public string Date { get; private set; }
+    public string PromptText { get; private set; }
+    public string EntryText { get; private set; }
+
+    public Entry(string date, string promptText, string entryText)
+    {
+        Date = date;
+        PromptText = promptText;
+        EntryText = entryText;
+    }
+
+    public void Display()
+    {
+        Console.WriteLine($"Date: {Date}");
+        Console.WriteLine($"Prompt: {PromptText}");
+        Console.WriteLine($"Response: {EntryText}");
+        Console.WriteLine(new string('-', 40));
+    }
 }
