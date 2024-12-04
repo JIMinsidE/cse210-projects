@@ -8,5 +8,16 @@ class Program
         Console.WriteLine(frac1.GetFractionString());
         Console.WriteLine(frac1.GetDecimalValue());
 
+        Fraction frac2 = new Fraction();
+        Console.WriteLine(frac2.GetFractionString());
+        Console.WriteLine(frac2.GetDecimalValue());
+
+        Fraction frac3 = new Fraction();
+        Console.WriteLine(frac3.GetFractionString());
+        Console.WriteLine(frac3.GetDecimalValue());
+
+        Fraction frac4 = new Fraction();
+        Console.WriteLine(frac4.GetFractionString());
+        Console.WriteLine(frac4.GetDecimalValue());
     }
 }
